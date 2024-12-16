@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script> function login() {
+        var use = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        if (use == "marie" && pass =="12345") {
+            window.location.href ="home.html";
+            alert("succesfully logged in");
+        }
+        else {
+            alert("incorrect to username or password");
+        }
+    }</script>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+   
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form action="home.html" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit"  class="login-btn" onclick="login()">Login</button>
+        </form>
+        
+    </div>
+
+</body>
+
+</html>
